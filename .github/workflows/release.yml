@@ -42,3 +42,11 @@ jobs:
         with:
           name: hello-world-golang_linux_i386.tar.gz
           path: dist/hello-world-golang_linux_i386.tar.gz
+      - uses: actions/upload-artifact@v1
+        with:
+          name: hello-world-golang_linux_arm64.tar.gz
+          path: dist/hello-world-golang_linux_arm64.tar.gz
+      - uses: actions/upload-artifact@v1
+        with:
+          name: hello-world-golang_linux_armv6.tar.gz
+          path: dist/hello-world-golang_linux_armv6.tar.gz
